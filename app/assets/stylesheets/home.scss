@@ -1,0 +1,33 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'materialize';
+
+.slider,
+.section-tabs {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+#gallery {
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.section-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.page-footer {
+  margin-top: 150px;
+}
+
+a,
+h2,
+h1,
+h5 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.carousel .carousel-item {
+  min-width: 350px !important;
+}
