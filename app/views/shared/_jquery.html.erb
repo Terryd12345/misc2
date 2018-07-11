@@ -1,0 +1,35 @@
+<script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+
+
+      // Init sidenav
+      $('.button-collapse').sideNav();
+
+
+      // Init carousel
+      $('.carousel').carousel();
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+
+      // Init slider
+      $('.slider').slider({
+        indicators: false,
+        interval: 3000,
+        transition: 1000,
+        height: 700
+      });
+
+      // Init Modal
+      $('.modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 300,
+        ready: function (modal, trigger) {
+          console.log('Modal Opened', modal, trigger);
+        }
+      });
+    });
+  </script>

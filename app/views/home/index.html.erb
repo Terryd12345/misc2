@@ -2,68 +2,12 @@
 <html>
 
 <head>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-<!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>University of Melbourne Infosec Club</title>
 </head>
 
 <body id="home" class="scrollspy">
-  <div class="navbar-fixed">
-    <nav class="light-green darken-2">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">UMISC</a>
-          <a href="#" data-activates="mobile-nav" class="button-collapse">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About Us</a>
-            </li>
-            <li>
-              <a href="#events">Events</a>
-            </li>
-            <li>
-              <a class="modal-trigger" href="#modal1">Join</a>
-            </li>
-            <li>
-              <a href="#gallery">Gallery</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Sidenav -->
-    <ul class="side-nav" id="mobile-nav">
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li>
-        <a href="#about">About Us</a>
-      </li>
-      <li>
-        <a href="#events">Events</a>
-      </li>
-      <li>
-        <a class="modal-trigger" href="#modal1">Join</a>
-      </li>
-      <li>
-        <a href="#gallery">Gallery</a>
-      </li>
-      <li>
-        <a class="modal-trigger" href="#modal1">Contact</a>
-      </li>
-    </ul>
-  </div>
+  <%= render :partial => "shared/navbar" %>
 
   <!-- Section: Slider -->
   <section class="slider section">
@@ -229,41 +173,7 @@
     </div>
   </div>
 
-  <script>
-    $(document).ready(function () {
-      // Custom JS & jQuery here
-
-
-      // Init sidenav
-      $('.button-collapse').sideNav();
-
-
-      // Init carousel
-      $('.carousel').carousel();
-
-      // Init Scrollspy
-      $('.scrollspy').scrollSpy();
-
-
-      // Init slider
-      $('.slider').slider({
-        indicators: false,
-        interval: 3000,
-        transition: 1000,
-        height: 700
-      });
-
-      // Init Modal
-      $('.modal').modal({
-        dismissible: true,
-        inDuration: 300,
-        outDuration: 300,
-        ready: function (modal, trigger) {
-          console.log('Modal Opened', modal, trigger);
-        }
-      });
-    });
-  </script>
+  <%= render :partial => "shared/jquery" %>
 </body>
 
 </html>
