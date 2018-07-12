@@ -23,14 +23,7 @@
       });
 
       // Init Modal
-      $('.modal').modal({
-        dismissible: true,
-        inDuration: 300,
-        outDuration: 300,
-        ready: function (modal, trigger) {
-          console.log('Modal Opened', modal, trigger);
-        }
-      });
+      $('.modal').modal();
 
       $('select').material_select();
 
