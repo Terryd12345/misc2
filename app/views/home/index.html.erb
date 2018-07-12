@@ -96,28 +96,14 @@
   <section id="events" class="scrollspy section section-events">
     <div class="container section-container">
       <h1>Upcoming Events</h1>
-      <table class="striped">
-        <thead>
-          <tr>
-            <th>Event</th>
-            <th>Date & Time</th>
-            <th>Location</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-        <% @events.all.each do |event| %>
-          <tr>
-            <th><%= event.title %></th>
-            <th><%= event.date %></th>
-            <th><%= event.location %></th>
-            <th>
-              <button class="btn light-green">Details</button>
-            </th>
-          </tr>
-         <% end %>
-        </tbody>
-      </table>
+      <div class="row">
+        <%= render :partial => "shared/event" %>
+        <%= render :partial => "shared/event" %>
+        <%= render :partial => "shared/event" %>
+        <%= render :partial => "shared/event" %>
+        <%= render :partial => "shared/event" %>
+        <%= render :partial => "shared/event" %>
+      </div>
     </div>
   </section>
 
