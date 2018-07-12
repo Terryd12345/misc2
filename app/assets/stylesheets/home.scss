@@ -19,11 +19,15 @@ h1 {
 }
 
 h5 {
-  font-family: 'Roboto-Mono', monospace;
+  font-family: 'Raleway', sans-serif;
 }
 
 .carousel .carousel-item {
   min-width: 350px !important;
+}
+
+.carousel {
+  overflow: hidden;
 }
 
 .slides {
