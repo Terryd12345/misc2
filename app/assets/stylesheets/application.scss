@@ -16,8 +16,8 @@
 
 @import 'materialize';
 
-.card:hover,
-.card-panel:hover {
+.blog-card:hover,
+.event-card:hover {
   transition: 0.2s linear;
   transform: translateY(-10px);
   -webkit-box-shadow: -1px 10px 35px -13px rgba(0, 0, 0, 0.62);
