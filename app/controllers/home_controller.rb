@@ -5,4 +5,10 @@ class HomeController < ApplicationController
 
   def about
   end
+
+  def events
+  end
+
+  def gallery
+  end
 end
