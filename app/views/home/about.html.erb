@@ -6,15 +6,9 @@
     </p>
     <h1 class="light-green-text">Who We Are</h1>
     <div class="row">
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
-      <%= render :partial => "shared/member" %>
+      <% for i in 1..9 %>
+        <%= render :partial => "shared/member" %>
+      <% end %>
     </div>
 
     

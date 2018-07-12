@@ -2,44 +2,10 @@
 <h1 class="light-green-text">Gallery</h1>
 <!-- Section:  Gallery -->
  <div class="row">
-  <div class="col s12 m3 pic">
-    <%= image_tag("img1.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img2.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img3.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img4.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img5.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img6.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img7.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img8.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img9.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img10.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img11.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img12.jpg", class: "materialboxed", width: "100%") %>
-  </div>
-  <div class="col s12 m3 pic">
-    <%= image_tag("img13.jpg", class: "materialboxed", width: "100%") %>
-  </div>
+  <% for i in 1..13 %>
+    <div class="col s12 m3 pic">
+      <%= image_tag("img"+i.to_s+".jpg", class: "materialboxed", width: "100%") %>
+    </div>
+  <% end %>
  </div>
-  </div>
+</div>

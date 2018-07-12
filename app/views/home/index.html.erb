@@ -73,21 +73,11 @@
       <h1 class="center light-green-text">Weekly Events</h1>
       <h5 class="center">We run weekly events focused on information security fundamentals. The events usually comprise of a short lecture on the week's topic followed by some capture the flag (CTF) exercises and free pizza/networking. First event is free so come check us out !</h5>
       <div class="carousel">
+        <% for i in 1..13 %> 
         <a class="carousel-item">
-          <%= image_tag("img1.jpg") %>
+          <%= image_tag("img"+i.to_s+".jpg") %>
         </a>
-        <a class="carousel-item">
-          <%= image_tag("img2.jpg") %>
-        </a>
-        <a class="carousel-item">
-          <%= image_tag("img3.jpg") %>
-        </a>
-        <a class="carousel-item">
-          <%= image_tag("img4.jpg") %>
-        </a>
-        <a class="carousel-item">
-          <%= image_tag("img5.jpg") %>
-        </a>
+        <% end %>
       </div>
     </div>
   </section>
