@@ -14,9 +14,12 @@
 
 a,
 h2,
-h1,
+h1 {
+  font-family: 'Anton', monospace;
+}
+
 h5 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto-Mono', monospace;
 }
 
 .carousel .carousel-item {
