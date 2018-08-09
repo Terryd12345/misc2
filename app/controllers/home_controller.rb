@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @events = Event.find(:all, :order => 'created_at DESC', :limit => 10)
+    @events = Event.all
   end
 
   def about

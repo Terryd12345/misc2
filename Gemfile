@@ -63,5 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'materialize-sass'
 gem 'jquery-rails'
+gem 'devise'
 
 ruby "2.5.1"
