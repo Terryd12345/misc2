@@ -16,15 +16,6 @@
 
 @import 'materialize';
 
-.blog-card:hover,
-.event-card:hover {
-  transition: 0.2s linear;
-  transform: translateY(-10px);
-  -webkit-box-shadow: -1px 10px 35px -13px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: -1px 10px 35px -13px rgba(0, 0, 0, 0.62);
-  box-shadow: -1px 10px 35px -13px rgba(0, 0, 0, 0.62);
-}
-
 body {
   display: flex;
   min-height: 100vh;
