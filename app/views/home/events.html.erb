@@ -1,0 +1,12 @@
+<div class="container">
+      <h1 class="light-green-text">Events</h1>
+      <div class="row">
+        <% if @events %>
+          <% @events.each do |event| %>
+            <%= render :partial => "shared/event" %>
+          <% end %>
+        <% else %>
+          <h3>No Events Curently Available</h3>
+        <% end %>
+      </div>
+</div>

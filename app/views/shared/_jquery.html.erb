@@ -1,0 +1,37 @@
+<script>
+    $(document).ready(function () {
+      // Custom JS & jQuery here
+
+
+      // Init sidenav
+      $('.button-collapse').sideNav();
+
+
+      // Init carousel
+      $('.carousel').carousel();
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+
+      // Init slider
+      $('.slider').slider({
+        indicators: false,
+        interval: 5000,
+        transition: 1000,
+        height: 700
+      });
+
+      // Init Modal
+      $('.modal').modal();
+
+      $('select').material_select();
+
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+    });
+  </script>

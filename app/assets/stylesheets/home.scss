@@ -1,0 +1,48 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'materialize';
+
+.section-container {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.section {
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+a,
+h2,
+h1,
+h3 {
+  font-family: 'Anton', monospace;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.carousel .carousel-item {
+  min-width: 350px !important;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.slides {
+  height: 100% !important;
+}
+
+.modal {
+  padding: 40px !important;
+}
+
+.signup-submit-button {
+  margin-top: 30px;
+}
+
+.pic {
+  margin: 10px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>University of Melbourne Infosec Club</title>
+</head>
+
+<body id="home" class="scrollspy">
+
+  <!-- Section: Slider -->
+  <section class="slider section">
+    <ul class="slides">
+      <li>
+        <%= image_tag("background1.jpg") %>
+        <div class="caption center-align">
+          <h2 class="light-green-text">SECURE APPLICATIONS</h2>
+          <h5 class="light hide-on-small-only explanation">Keep attackers out of your systems with cutting edge data protection techniques</h5>
+          <a href="#" class="btn btn-large light-green">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <%= image_tag("background2.jpg") %>
+        <div class="caption left-align">
+          <h2 class="light-green-text">GET A JOB</h2>
+          <h5 class="light hide-on-small-only explanation">Security field is expected to grow 30% by 2025, theres never been a better time to get involved.</h5>
+          <a href="#" class="btn btn-large light-green">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <%= image_tag("background3.jpg") %>
+        <div class="caption right-align">
+          <h2 class="light-green-text">BECOME A HACKER</h2>
+          <h5 class="light hide-on-small-only explanation">Learn the secrets of how to exploit application vulnerabilities</h5>
+          <a href="#" class="btn btn-large light-green">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section: Tabs -->
+  <section id="tabs" class="section section-tabs">
+    <div class="container section-container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel center tab-card">
+            <i class="material-icons large light-green-text">verified_user</i>
+            <h5>UMSU Approved</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aut.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel center tab-card">
+            <i class="material-icons large light-green-text">cast</i>
+            <h5>100 Members</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aut.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel center tab-card">
+            <i class="material-icons large light-green-text">supervised_user_circle</i>
+            <h5>Another Credential</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aut.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section:  Gallery -->
+  <section id="gallery" class="scrollspy section section-gallery grey lighten-3">
+    <div class="container section-container gallery-container">
+      <h1 class="center light-green-text">Weekly Events</h1>
+      <h5 class="center">We run weekly events focused on information security fundamentals. The events usually comprise of a short lecture on the week's topic followed by some capture the flag (CTF) exercises and free pizza/networking. First event is free so come check us out !</h5>
+      <div class="carousel">
+        <% for i in 1..9 %> 
+        <a class="carousel-item">
+          <%= image_tag("img"+i.to_s+".jpg") %>
+        </a>
+        <% end %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Events -->
+  <section id="events" class="scrollspy section section-events">
+    <div class="container section-container">
+      <h1 class="light-green-text">Our Next Event</h1>
+      <div class="row">
+        <%= render :partial => "shared/next_event" %>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
