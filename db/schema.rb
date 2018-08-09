@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_07_20_082545) do
+=======
+ActiveRecord::Schema.define(version: 2018_07_11_131655) do
+>>>>>>> 048f1617ae75eb4676bdb4c575cff34d915cd49d
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -46,6 +51,8 @@ ActiveRecord::Schema.define(version: 2018_07_20_082545) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+=======
+>>>>>>> 048f1617ae75eb4676bdb4c575cff34d915cd49d
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
@@ -63,6 +70,7 @@ ActiveRecord::Schema.define(version: 2018_07_20_082545) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "guest_users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -91,4 +99,6 @@ ActiveRecord::Schema.define(version: 2018_07_20_082545) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+=======
+>>>>>>> 048f1617ae75eb4676bdb4c575cff34d915cd49d
 end
