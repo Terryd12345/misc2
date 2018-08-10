@@ -19,9 +19,15 @@
             <li>
               <a href="/blogs">Blog</a>
             </li>
+            <% if user_signed_in? %>
+            <li>
+              <%= link_to 'logout', destroy_user_session_path, :method => :delete, class: "btn light-green" %>
+            </li>   
+            <% else %>
             <li>
               <a href="/signup"><button class="btn light-green">Sign Up</button></a>
             </li>
+            <% end %>
           </ul>
         </div>
       </div>
