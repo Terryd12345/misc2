@@ -9,6 +9,6 @@ class HomeController < ApplicationController
   def events
   end
 
-  def gallery
+  def blog
   end
 end
