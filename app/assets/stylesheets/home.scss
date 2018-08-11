@@ -4,12 +4,20 @@
 @import 'materialize';
 
 .section-container {
-  margin-top: 100px !important;
-  margin-bottom: 100px !important;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 
 .section {
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 100%);
+}
+
+.carousel .carousel-item {
+  min-width: 350px !important;
+}
+
+.carousel {
+  overflow: hidden;
 }
 
 a,
@@ -23,23 +31,19 @@ h5 {
   font-family: 'Raleway', sans-serif;
 }
 
-.carousel .carousel-item {
-  min-width: 350px !important;
-}
-
-.carousel {
-  overflow: hidden;
-}
-
 .slides {
   height: 100% !important;
-}
-
-.pic {
-  margin: 10px;
 }
 
 .googleForm {
   margin-top: 100px;
   margin-bottom: 400px;
+}
+
+.section-tabs {
+  background: white;
+}
+
+.icon-bar {
+  z-index: 1;
 }
