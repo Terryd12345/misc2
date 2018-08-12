@@ -15,11 +15,17 @@ ActiveRecord::Schema.define(version: 2018_08_11_015235) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "events", force: :cascade do |t|
+  create_table "blogs", force: :cascade do |t|
     t.string "title"
-    t.string "location"
-    t.string "date"
-    t.string "link"
+    t.string "subtitle"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "iframe"
+    t.datetime "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

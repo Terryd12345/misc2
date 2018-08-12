@@ -1,3 +1,3 @@
 class Event < ApplicationRecord
-  validates_presence_of :title, :location, :date
+  validates_presence_of :iframe, :date
 end
