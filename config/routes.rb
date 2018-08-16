@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'signup'}
+  devise_for :users, path: '', path_names: { sign_in: 'admin', sign_out: 'logout', sign_up: 'signup'}
   get '/blog', to: "home#blog"
   get '/about', to: 'home#about'
   get '/events', to: 'home#events'
